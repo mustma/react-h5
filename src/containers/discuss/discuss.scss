@@ -1,0 +1,7 @@
+@import '../../mixin/function';
+
+.page{
+	&.discuss{
+		@extend %bg;
+	}
+}

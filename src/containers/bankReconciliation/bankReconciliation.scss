@@ -1,0 +1,160 @@
+$rem:40px;
+.fl {
+    float: left;
+}
+
+.views {
+    min-height: 100%;
+    background: #fff;
+}
+
+.bills {
+    padding-top: .8rem;
+    background: #fff;
+    overflow-y: auto;
+}
+
+.bills .title {
+    padding-left: 0.75*$rem;
+    height: 1.75*$rem;
+    line-height: 1.75*$rem;
+    font-size: 0.7*$rem;
+    background-color: #f7f5f2;
+}
+
+.amount .add {
+    color: #ff6f01!important;
+}
+
+.amount .desc {
+    font-size: .24rem;
+    color: #bbb;
+}
+
+.bills .list {
+    padding-left: 0.75*$rem;
+}
+
+.bills li {
+    height: 3.5*$rem;
+    overflow: hidden;
+    //  border-top: #d9d9d9 solid .025*$rem;
+    position: relative;
+}
+
+.bills li:first-child {
+    border-top: 0;
+}
+.bills li:last-child:after{
+    content: ''!important;
+    height:0!important;
+}
+
+.bills .date {
+    padding-top: 0.55*$rem;
+    line-height: 1.2*$rem;
+    font-size: 0.7*$rem;
+    color: #999;
+    width: 2.5*$rem;
+}
+
+.bills .bank-icon {
+    width: 1.75*$rem;
+    height: 1.75*$rem;
+    margin-top: 0.875*$rem;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.bills .amount {
+    width: 9.5*$rem;
+    padding-top: 0.55*$rem;
+    margin-left: 1.3*$rem;
+    line-height: 1.2*$rem;
+    font-size: 0.7*$rem;
+    color: #666;
+}
+
+.bills .amount b {
+    color: #333;
+}
+
+.bills .status {
+    line-height: 3.5*$rem;
+    position: absolute;
+    right: 0.75*$rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 0.6*$rem;
+    color: #ff6f01;
+}
+
+.bills .status.fail {
+    color: #e60000;
+}
+
+.bills .status.finish {
+    color: #00dd1a;
+}
+
+.bills .more {
+    height: 2.2*$rem;
+    line-height: 2.2*$rem;
+    text-align: center;
+    font-size: 0.75*$rem;
+    color: #666;
+}
+
+.icon-bank {
+    background: url(./img/icon-bank.png);
+}
+
+.icon-wechat {
+    background: url(./img/icon-wechat.png);
+}
+
+.icon-union {
+    background: url(./img/icon-union.png);
+}
+
+.icon-kuaijie {
+    background: url(./img/icon-fast-pay.png);
+}
+
+.icon-zhanghutixian {
+    background: url(./img/icon-zhanghutixian.png);
+}
+
+.icon-ziyouzijin {
+    background: url(./img/icon-ziyouzijin.png);
+}
+
+.icon-fast-pay {
+    background: url(./img/icon-fast-pay.png);
+}
+
+.icon-common {
+    background: url(./img/icon-common.png);
+}
+
+.hidden-true {
+    display: none;
+}
+
+.nothing {
+    width: 6.5*$rem;
+    padding-top: 6.5*$rem;
+    font-size: 0.75*$rem;
+    color: #999999;
+    line-height: 2.5*$rem;
+    margin: 7*$rem auto 0;
+    background: url(./img/nothing.png) no-repeat top;
+    text-align: center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+

@@ -1,0 +1,29 @@
+$bgColor: #f5f5f5;
+html,
+body {
+  background: $bgColor;
+}
+
+.page-checkpiece {
+  background: $bgColor;
+  .am-tabs-bar {
+    font-weight: 400 !important;
+    font-size: .28rem;
+    color: #333;
+  }
+  .comments {
+    margin-top: 20px;
+  }
+  .am-tabs-bar .am-tabs-tab {
+    border-right: 1px solid #e6e6e6;
+  }
+  .am-tabs-bar .am-tabs-tab-active {
+    color: #ff8400;
+  }
+  .am-tabs-ink-bar {
+    background-color: #ff8400;
+  }
+  .comments {
+    width: 100%;
+  }
+}

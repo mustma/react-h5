@@ -1,0 +1,58 @@
+.switch {
+    position: relative;
+    outline: none;
+    width: 60px;
+    height: 36px;
+
+    input {
+        display: none;
+    }
+
+    input + label {
+        display: block;
+        position: absolute;;
+        width: 60px;
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            border-radius: 36px;
+            transition: all 0.25s ease-in-out;
+        }
+
+        &:before { 
+            height: 36px;;
+            width: 60px;
+            background-color: #e6e6e6;
+        }
+
+        &:after {
+            width: 34px;
+            height: 34px;
+            background: #fff;
+            transform: translate(1px,1px)
+        }
+    }
+
+    input:checked + label:after { 
+        transition: all 0.25s ease-in-out;
+        transform: translate(24px ,1px);
+    }
+    
+    input:checked + label:before { 
+        background-color: #ff8400;
+    }
+}
+
+.startStationCode {
+    box-sizing: border-box;
+    background: url("../img/from.png") no-repeat left center;
+    background-size: 36px 45px;
+    padding-left: 50px;
+}
+.endStationCode {
+    box-sizing: border-box;
+    background: url("../img/to.png") no-repeat left center;
+    background-size: 36px 45px;
+    padding-left: 50px;
+}

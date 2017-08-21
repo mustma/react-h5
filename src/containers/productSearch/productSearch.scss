@@ -1,0 +1,133 @@
+.product-wrap {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    background: #f5f5f5;
+    font-size: 28px;
+    color: #333;
+
+    .product-content {
+        background: #fff;
+    }
+
+
+    .quality {
+        display: flex;
+        box-sizing: border-box;
+        padding: 47px 0;
+        justify-content: space-around;
+    }
+
+    .quality-active{
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 200px;
+            height: 32px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #d2d2d2;
+            text-align: center;
+        }
+
+        span {
+            &:nth-of-type(2) {
+                color: #ccc;
+            }
+        }
+    }
+
+    
+
+    .btn-box {
+        margin: 52px 40px;
+        
+        .btn {
+                display: block;
+                width: 100%;
+                height: 80px;
+                font-size: 34px;
+                border-radius: 6px;
+                background: #ff8400;
+                border: none;
+                color: #fff;
+            }
+    }
+}
+
+
+
+
+.product-wrap {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: .2rem;
+    background: #f5f5f5;
+    font-size: .28rem;
+
+    .product-content {
+        background: #fff;
+    }
+}
+
+.switch-box {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 52px;
+    border-bottom: 1px solid #e6e6e6;
+
+    .switch-box-active {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 11px;
+        }
+    }
+}
+
+
+.from-to {
+    box-sizing: border-box;
+    padding-left: 40px;
+    
+    input {
+        outline: none;;
+    }
+
+    .form-active {
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+
+        input {
+            border: none;
+        }
+
+        img {
+            width: 36px;
+            height: 45px;
+            margin-right: 18px;
+        }
+    }
+}
+
+.switch-address {
+    position: relative;
+    background: #e6e6e6;
+
+    .address {
+        height: 60px;
+        width: 60px;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        right: 120px;
+        background: url('./img/address.png') no-repeat center center, #fff;
+        background-size: 50px 50px;
+    }
+}
+

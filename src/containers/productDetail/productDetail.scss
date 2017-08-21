@@ -1,0 +1,338 @@
+html,
+body {
+    background: #f5f5f5;
+}
+
+$orangeColor:#ff8e54;
+.brand,
+.authentication,
+.recommend {
+    .summary-info {
+        background: url(./img/background-brand@2x.png) no-repeat!important;
+        width: 100%;
+        color: #fff!important;
+        .province,
+        .city,
+        .direction {
+            color: #fff!important;
+        }
+    }
+}
+
+.brand {
+    .summary-info {
+        background: url(./img/background-brand@2x.png) no-repeat!important;
+        background-size: cover!important;
+    }
+    .company-name .company-icon {
+        background: url(./img/icon-brand@2x.png) no-repeat!important;
+        background-size: cover!important;
+    }
+}
+
+.authentication {
+    .summary-info {
+        background: url(./img/background-authentication@2x.png) no-repeat!important;
+        background-size: cover!important;
+    }
+    .company-name .company-icon {
+        background: url(./img/icon-authentication@2x.png) no-repeat!important;
+        background-size: cover!important;
+    }
+}
+
+.recommend {
+    .summary-info {
+        background: url(./img/background-recommend@2x.png) no-repeat!important;
+        background-size: cover!important;
+    }
+    .company-name .company-icon {
+        background: url(./img/icon-recommend@2x.png) no-repeat!important;
+        background-size: cover!important;
+    }
+}
+
+.productDetail {
+    height: 100%;
+    background: #f5f5f5;
+    text-align: right;
+    color: #8c8c8d;
+    .wenhao {
+        background: url(img/wenhao.png);
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-size: cover;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    .blank-space {
+        height: 20px;
+        width: 100%;
+    }
+    .summary-info {
+        width: 690px;
+        margin: 0 auto;
+        height: 180px;
+        background: #fff;
+        margin-top: 30px;
+        border-top-left-radius: .1rem;
+        border-top-right-radius: .1rem;
+        .card {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 .5rem;
+        }
+        .direction {
+            flex: 1;
+            justify-content: center;
+            color: #949494;
+            font-size: 26px;
+            text-align: center;
+            label {
+                display: block;
+            }
+            .direction-icon {
+                width: 2.2rem;
+                margin-bottom: .1rem;
+            }
+        }
+        .province {
+            font-size: 40px;
+            color: #333;
+            display: block;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+        .city {
+            font-size: 28px;
+        }
+    }
+    .company-detail {
+        width: 100%;
+        background: #fff;
+        text-align: left;
+        padding: 30px;
+        padding-bottom: 0;
+        .contract {
+            padding: .2rem 0;
+            position: relative;
+        }
+        .fache-shijian {
+            height: 90px;
+            line-height: 90px;
+        }
+        .icon-tel {
+            background: url(img/1.png);
+            width: .48rem;
+            height: .48rem;
+            background-size: cover;
+            display: block;
+            position: absolute;
+            right: .3rem;
+            top: 50%;
+            margin-top: -.24rem;
+        }
+        .company-name {
+            font-size: 32px;
+            color: #333333;
+            .company-icon {
+                display: inline-block;
+                width: 72px;
+                height: 32px;
+                margin-left: .18rem;
+            }
+        }
+        .tags {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            display: table;
+            label {
+                font-size: .22rem;
+                padding-right: .53rem;
+                display: table-cell;
+                color: #333;
+            }
+        }
+        .company-info {
+            font-size: 28px;
+            label {
+                margin-right: 20px;
+            }
+            .tel-info {
+                margin-bottom: .15rem;
+            }
+        }
+        hr {
+            background: #e6e6e6;
+            border: 0;
+            height: 1px;
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .comment-info {
+        background: #fff;
+        text-align: left;
+        padding: .3rem;
+        .icon-arrow {
+            background: url(img/arrow-left.png);
+            width: 20px;
+            height: 32px;
+            display: block;
+            background-size: cover;
+            right: 0;
+            top: -1px;
+            position: absolute;
+        }
+        .comment-title {
+            font-size: 28px;
+            color: #333;
+            position: relative;
+            label {
+                color: #999999;
+                margin-left: 10px;
+            }
+        }
+        .split {
+            height: .01rem;
+            width: 100%;
+            margin: 0;
+            border: 0;
+            border-bottom: 0.01rem solid #e6e6e6;
+        }
+        .comments {
+            .comment {
+                .comment-content {
+                    font-size: .26rem;
+                    color: #333;
+                    line-height: .35rem;
+                }
+                .user-info {
+                    .avatar {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        margin-right: 14px;
+                        display: inline-block;
+                        background-size: cover;
+                    }
+                    .nickname {
+                        font-size: 28px;
+                        color: #333;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .comment-rate {
+            display: flex;
+            height: 102px;
+            align-items: center;
+            margin: .3rem 0;
+            font-size: .24rem;
+            .num {
+                font-size: .48rem;
+                font-weight: 600;
+                color: #ff8e54;
+                width: 1rem;
+                border-right: .01rem solid #d7d7d7;
+                margin-right: .28rem;
+                height: 1rem;
+                line-height: 1rem;
+            }
+            .star-box {
+                margin: .12rem 0;
+            }
+            label {
+                margin-right: .1rem;
+            }
+        }
+        .view-all {
+            width: 180px;
+            height: 50px;
+            margin: 0 auto;
+            display: block;
+            background: transparent;
+            border: 1px solid $orangeColor;
+            color: $orangeColor;
+            border-radius: 10px;
+            font-size: 26px;
+            margin-top: .4rem;
+        }
+    }
+    .price-desc {
+        width: 100%;
+        background: #fff;
+        text-align: left;
+        padding-left: 30px;
+        .price-item {
+            height: .8rem;
+            line-height: .8rem;
+            font-size: .28rem;
+            border-bottom: 1px solid #e6e6e6;
+            .value {
+                float: right;
+                margin-right: .3rem;
+            }
+            .total {
+                color: $orangeColor;
+                font-size: 36px;
+            }
+        }
+        .price-item:last-child {
+            border: 0;
+        }
+    }
+    .desc-info {
+        text-align: left;
+        font-size: 28px;
+        background-color: #fff;
+        padding-left: 30px;
+        padding-right: 30px;
+        .sub-title {
+            padding-top: 30px;
+            padding-bottom: 20px;
+            color: #333;
+            label {
+                margin-left: 10px;
+                margin-right: 10px;
+                color: $orangeColor;
+            }
+        }
+        table {
+            width: 100%;
+            .th-header {
+                background: #fff6ec;
+            }
+            th {
+                font-weight: 400;
+                border: 1px solid #cccccc;
+                text-align: center;
+                color: #333;
+                font-size: 24px;
+            }
+            tr,
+            td {
+                height: 80px;
+                line-height: 80px;
+                text-align: center;
+                border: 1px solid #ccc;
+                text-align: center;
+                color: #333;
+                font-size: 24px;
+            }
+        }
+    }
+    .xiadan {
+        width: 100%;
+        height: 100px;
+        background: $orangeColor;
+        border: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 32px;
+    }
+}

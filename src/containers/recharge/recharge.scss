@@ -1,0 +1,62 @@
+$border: 1px solid #d7d7d7;
+
+.recharge-wrap {
+    height: 100%;
+    color: #333;
+    font-size: 30px;
+    background: #ebebeb;
+
+    .am-input-label {
+        margin-left: 10px;
+    }
+
+    .am-list-item{
+        border-top: $border;
+        border-bottom: $border;
+    }
+
+    .am-input-item {
+        &:after {
+            border: none;
+        }
+    }
+}
+
+.recharge-header {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
+    background: #fff;
+    border-bottom:$border;
+
+    .icon {
+        width: 116px;
+        height: 64px;
+        background: url("./img/wechat.png") no-repeat center center;
+        background-size: 64px;
+    }
+
+    h3 {
+        margin-bottom: 14px;
+    }
+
+    span {
+        color: #bcbcbc;
+    }
+}
+
+.sub-btn {
+    border: none;
+    display: block;
+    width: 92%;
+    padding: 24px 0;
+    color: #8c8c8c;
+    margin: 38px auto;
+    border-radius: 6px;
+    background: #d5d5d5;
+}
+.sub-btn-color {
+    background: #ff8400;
+    color: #fff;
+}

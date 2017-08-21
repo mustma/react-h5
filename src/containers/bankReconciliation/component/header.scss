@@ -1,0 +1,41 @@
+.cf{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;;
+}
+.cf ul{
+     width: 100%;
+    font-size: .3rem;
+    display: flex;
+  
+    height: .8rem;
+    line-height: .8rem;
+    padding-right: .5rem;
+    color: #ec7917;
+    
+}
+.cf .bar a{
+        padding-left: .25rem;
+    display: flex;
+    align-items: center;
+}
+.cf .back-icon{
+     background: url(../../../img/back.png);
+    display: inline-block;
+    width: .35rem;
+    height: .35rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cf ul li a{
+        color: #ff6f01;
+    text-decoration: none;
+}
+.cf ul .middle{
+    flex:1;
+}
+.hidden-true{
+    display: none;
+}

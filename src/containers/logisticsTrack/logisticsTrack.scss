@@ -1,0 +1,181 @@
+html,
+body {
+    background: #f5f5f5;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 2000;
+}
+
+$orangeColor:#ff8e54;
+.logistics-track-page {
+//  margin-top: 21px;
+    font-size: 28px;
+    background: #fff;
+    padding-left: .32rem;
+}
+
+.summary-info {
+    background: #fff;
+    padding-top: 30px;
+    padding-left: 32px;
+    .top-info {
+        line-height: 90px;
+        height: 90px;
+        font-size: 28px;
+        .num-label {
+            margin-right: 20px;
+        }
+        .status {
+            margin-right: 30px;
+            float: right;
+            color: #ff8400;;
+        }
+    }
+    .where {
+        display: table;
+        width: 100%;
+            margin-top: .35rem;
+    }
+    .from-area,
+    .to-area,
+    .direction {
+        display: table-cell;
+        text-align: center;
+        span {
+            display: block;
+        }
+        .province-name {
+            font-size: 32px;
+            color: #333;
+        }
+        .area-name {
+            font-size: 28px;
+            color: #666;
+            margin-top: 19px;
+        }
+    }
+    .from-area {
+        text-align: left;
+        width: 50%;
+    }
+    .to-area {
+        text-align: right;
+        padding-right: 32px;
+        width: 50%;
+    }
+    .direction {
+        img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            background-size: cover;
+        }
+    }
+    .box {
+        width: 36px;
+        height: 39px;
+        background-size: cover;
+        vertical-align: middle;
+        margin-right: 25px;
+    }
+    .product-info {
+        margin-top: 30px;
+            margin-bottom: 30px;
+        .tag {
+            color: #999;
+            font-size: 28px;
+            i {
+                font-style: normal;
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+hr {
+    height: 0;
+    border: 0;
+    /* background: #e6e6e6; */
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+        margin: 0;
+}
+
+.timeline-info {
+    padding-left: 54px;
+    background: #fff;
+    overflow: hidden;
+    .time-line-title {
+        height: 90px;
+        line-height: 90px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .time-lines {
+        .time-stone {
+            position: relative;
+            .dots {
+                position: absolute;
+                height: 100%;
+                width: 1px;
+                background: #ddd;
+                left: -40px;
+                top: 25px;
+                i {
+                    display: block;
+                    background: #ddd;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -.07rem;
+                }
+            }
+            .post-date {
+                margin-top: 19px;
+            }
+            .content {
+                border-bottom: 1px solid #e6e6e6;
+                width: 100%;
+                padding-top: 25px;
+                padding-bottom: 19px;
+                color: #d0d0d0;
+            }
+        }
+        .time-stone:first-child {
+             .content {
+                  color: #ff8400;
+             }
+            .dots i {
+                background: #ff8400;;
+                &:before {
+                    content: "";
+                    width: .25rem;
+                    height: .25rem;
+                    display: block;
+                    background: rgba(255, 132, 0, 0.32);
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 51%;
+                    transform: translate(-50%, -50%);
+                
+            }
+        }
+    }
+    .time-stone:last-child {
+        .content {
+            border: 0!important;
+        }
+    }
+}
+
+
+}

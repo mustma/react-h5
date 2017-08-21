@@ -1,0 +1,304 @@
+/*帐单详情*/
+$rem:40px;
+.fl {
+    float: left;
+}
+.bills-detail {
+    background-color: #f7f7f7;
+    padding-top: .8rem;
+   overflow-y: auto;
+}
+
+.bills-detail .status {
+    padding-left: 0.75*$rem;
+    padding-top: 0.6*$rem;
+    line-height: 1.2*$rem;
+    font-size: 0.7*$rem;
+    color: #ff6f01;
+    background-color: #fff;
+}
+.bills-detail .status.success{
+        color: #76bf7f;
+}
+.bills-detail .status.fail {
+    color: #e60000;
+}
+.amount .add{
+    color: #ff6f01!important;     
+}
+.bills-detail .status.finish {
+    color: #00dd1a;
+}
+
+.bills-detail .amount {
+    height: 5.75*$rem;
+    padding: 0.75*$rem 0 1.15*$rem 0.7*$rem;
+    color: #333333;
+    font-size: 2*$rem;
+    line-height: 3.85*$rem;
+    background-color: #fff;
+}
+
+.bills-detail .company-name {
+    height: 3*$rem;
+    background-color: #fff;
+    margin-bottom: 0.5*$rem;
+    position: relative;
+}
+
+.bills-detail .company-name .logo {
+    width: 2*$rem;
+    height: 2*$rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0.75*$rem;
+    top: 0.5*$rem;
+//  border: #eaeaea solid 0.025*$rem;
+    border-radius: 0.15*$rem;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.bills-detail .company-name .name {
+    font-size: 0.7*$rem;
+    position: absolute;
+    left: 3.2*$rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 2*$rem;
+    line-height: 0.8*$rem;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.bills-detail .step {
+    height: 4*$rem;
+ 
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.bills-detail .step .node {
+    width: 7*$rem;
+    text-align: center;
+}
+
+.bills-detail .step .line {
+    height: 1*$rem;
+    position: relative;
+}
+
+.bills-detail .step .line:before {
+    z-index: 9;
+    height: 0.1*$rem;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: #b4b4b4;
+}
+
+.bills-detail .step .line.start:before {
+    left: 50%;
+}
+
+.bills-detail .step .line.end:before {
+    right: 50%;
+}
+
+.bills-detail .step .line.end:after {
+    z-index: 11;
+    width: 0.9*$rem;
+    height: 0.9*$rem;
+    border-radius: 0.9*$rem;
+    content: '';
+    background-color: #b4b4b4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(./img/success.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 0.45*$rem;
+    background-size: 0.45*$rem;
+}
+
+.bills-detail .step .line .sopt {
+    z-index: 10;
+    width: 0.5*$rem;
+    height: 0.5*$rem;
+    border-radius: 0.525*$rem;
+    font-size: 0;
+    line-height: 0;
+    background-color: #ff7000;
+    border: #db7b31 solid 0.025*$rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.bills-detail .step .stat {
+    font-size: 0.6*$rem;
+    line-height: 1*$rem;
+    color: #b4b4b4;
+}
+
+.bills-detail .step .time {
+    font-size: 0.5*$rem;
+    line-height: 0.75*$rem;
+    color: #b2b2b2;
+     height:  0.75*$rem;
+}
+
+.bills-detail .step .node.success .stat {
+    color: #e57535;
+}
+
+.bills-detail .step .node.success .line:before {
+    background-color: #ff7000;
+}
+
+.bills-detail .step .node.success .line.end:after {
+    background-color: #ff7000;
+}
+
+.bills-detail .step .node.fail .line:before {
+    background-color: #ff7000;
+}
+
+.bills-detail .step .node.fail .line.end:after {
+    background-color: #b4b4b4;
+    background-image: url(./img/fail.png);
+}
+
+.bills-detail .list {
+  
+   
+    padding-left: 0.625*$rem;
+    background-color: #fff;
+}
+
+.bills-detail .list li {
+    height: 2.25*$rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+}
+.bills-detail .list li:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: #d9d9d9;
+    width: 100%;
+    height: 2px;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    left: 0;
+}
+.bills-detail .list li:first-child {
+    border-top: 0;
+}
+
+.bills-detail .list .name {
+    width: 5.5*$rem;
+        font-size: 0.85*$rem;
+    padding-left: 0.125*$rem;
+    color: #666;
+}
+
+.bills-detail .list .value {
+    color: #999999;
+     font-size: 0.85*$rem;
+}
+
+.bills-detail .list li.link:after {
+    z-index: 1;
+    content: '';
+   
+    border-color: transparent transparent transparent #d0d0d0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.475*$rem;
+    margin: auto 0;
+}
+
+.bills-detail .list li.link:before {
+    z-index: 2;
+    content: '';
+    border: #d0d0d0 solid 0.55*$rem;
+    border-color: transparent transparent transparent #fff;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.575*$rem;
+    margin: auto 0;
+}
+
+.bills-detail .list li:active {
+    background-color: #eee;
+}
+
+.bills-detail .list li:active:after {
+    border-color: transparent transparent transparent #fff;
+}
+
+.bills-detail .list li:active:before {
+    border-color: transparent transparent transparent #eee;
+}
+.icon-bank{
+     background: url(../bankReconciliation/img/icon-bank.png);
+}
+.icon-wechat{
+    background: url(../bankReconciliation/img/icon-wechat.png);
+}
+.icon-union{
+     background: url(../bankReconciliation/img/icon-union.png);
+}
+.icon-kuaijie{
+    background: url(../bankReconciliation/img/icon-fast-pay.png);
+}
+.icon-zhanghutixian{
+      background: url(../bankReconciliation/img/icon-zhanghutixian.png);
+}
+.icon-ziyouzijin{
+      background: url(../bankReconciliation/img/icon-ziyouzijin.png);
+}
+.icon-fast-pay{
+      background: url(../bankReconciliation/img/icon-fast-pay.png);
+}
+.icon-common{
+      background: url(../bankReconciliation/img/icon-common.png);
+}
+.show{
+    display: block!important;
+}
+.hide{
+  display: none;  
+}

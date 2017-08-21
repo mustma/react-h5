@@ -1,0 +1,91 @@
+html,
+body {
+    background: #f5f5f5;
+}
+.page2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 2000;
+}
+$orangeColor:#ff8e54;
+$rem:40px;
+.screen{
+    padding-top: .8rem;
+}
+.screen .title {
+    height: 2*$rem;
+    line-height: 2*$rem;
+    padding-left: 0.5*$rem;
+    font-size: 0.75*$rem;
+    color: #333;
+}
+
+.screen .conts {
+    overflow: hidden;
+}
+
+.screen .conts.bt {
+    border-bottom: 0.05*$rem solid #f0f0f0;
+}
+.screen .conts .dd {
+    width: 4.1*$rem;
+    height: 1.9*$rem;
+    text-align: center;
+    line-height: 1.9*$rem;
+    border: 0.05*$rem solid #eee;
+    color: #333;
+    border-radius: 0.2*$rem;
+    margin-left: 0.5*$rem;
+    margin-bottom: 0.75*$rem;
+    overflow: hidden;
+    font-size: 0.6*$rem;
+    float: left;
+}
+
+.screen .conts dt.selected {
+    background-color: #fbcbab;
+    border-color: #fca34d;
+    color: #fe8e17;
+}
+
+.screen .conts .dd:active {
+    border-color: #fca34d;
+    color: #fe8e17;
+}
+
+.screen .btns {
+    overflow: hidden;
+    height: 2.05*$rem;
+    padding: 0 0.5*$rem;
+}
+
+.screen .btns .btn {
+    width: 8.65*$rem;
+    height: 2.05*$rem;
+    text-align: center;
+    line-height: 2.05*$rem;
+    border: 0.05*$rem solid #eee;
+    color: #333;
+    border-radius: 0.2*$rem;
+    overflow: hidden;
+    font-size: 0.75*$rem;
+}
+.fl {
+    float: left;
+}
+.screen .btns .reset{
+    margin-right:.15rem ;
+}
+.screen .btns .submit.btn {
+    background-color: #ff8400!important;
+    color: #fff;
+    border-color: #ff6b00!important;
+}
+
+.screen .btns .btn:active {
+    opacity: 0.8;
+}

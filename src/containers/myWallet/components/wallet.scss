@@ -1,0 +1,98 @@
+img {
+    border: none;
+}
+.wallet-box {
+    background: #eb6c09;
+    font-size: 32px;
+    color: #fff;
+
+    .avatar-box {
+        box-sizing: border-box;
+        padding-top: 1px;
+
+        p {
+            line-height: 1;
+        }
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 123px;
+        width: 123px;
+        margin: 210px auto 0;
+        border-radius: 50%;
+        //background: url("../img/avatar.png")no-repeat center center;
+        background-size: 70%;
+
+        .avatar-img {
+            width: 64px;
+            height: 64px;
+            border: none;
+        }
+
+        img {
+            border: none;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .name {
+        margin: 10px 0 26px 0;
+        text-align: center;
+        height: 30px;
+        color: #fff;
+    }
+}
+.money-box {
+    display: flex;
+    justify-content: space-around;
+
+    >div {
+        flex: 1;
+
+        div {
+            text-align: center;
+            height: 28px;
+        }
+    }
+
+    p {
+        margin: 16px 0 20px 0;
+        text-align: center;
+    }
+}
+
+
+.wallet-footer {
+    display: flex;
+    background: #fff;
+
+    >div {
+        flex: 1;
+        padding: 145px 0 66px 0;
+        text-align: center;
+
+        &:first-child {
+            background: url("../img/monery.png") no-repeat center 65px;
+            background-size: 63px 63px;
+        }
+
+        &:nth-child(2) {
+            background: url("../img/zhangdan.png") no-repeat center 65px;
+            background-size: 48px 58px;
+            border-right: 1px solid #eaeaea;
+            border-left: 1px solid #eaeaea;
+        }
+
+        &:last-child {
+            background: url("../img/yanghanka.png") no-repeat center 65px;
+            background-size: 50px 63px;
+            color: #e6e6e6;
+        }
+
+    }
+}
